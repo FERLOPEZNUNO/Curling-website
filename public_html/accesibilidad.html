@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accesibilidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>CURLING</h1>
+        <a class="linkz" href="index.html">Página de inicio</a>
+        <a class="linkz" href="historia.html">Historia del curling</a>
+        <a class="linkz" href="contacto.html">Contacto</a>
+    </header>
+
+    <br><br><br>
+
+    <div class="accesibilidad">
+        <div class="texto-accesibilidad">
+            <p class="texto2" tabindex="0">
+
+                Esta web ha sido diseñada para oferecer un nivel elevado de accesibilidad. Entre
+                las características que se han empleado para mejorar la experiencia de navegación se
+                incluyen las siguientes: <br><br>
+
+            <ol class="texto2">
+               
+                <li>- Elementos ARIA: se trata de funcionalidades HTML para mejorar la experiencia de usuarios que
+                usan software de asistencia, como los screen readers. <br><br>
+
+                <ul class="texto2">
+
+                    <li>aria-label: se añade este atributo al botón "submit" para indicar claramente qué acción se
+                        realiza al hacer clic en él.</li> <br>
+
+                    <li>role="form": se añade a la etiqueta del form para especificar que es un formulario, lo que puede
+                        ayudar a los lectores de pantalla a identificar su propósito.</li><br>
+
+                    <li>aria-required: este atributo se añade a todos los campos que queremos que sean obligatorios. A
+                        diferencia del "required" normal de HTML, el elemento ARIA ayuda a los usuarios de tecnologías asistivas a
+                        entender mejor qué información es esencial. </li><br>
+
+                </ul></li>
+
+                <li>- Contraste: para evitar problemas de contraste se ha usado un esquema de colores muy sencillo: negro y
+                blanco. El esquema se aplica tanto al grueso de la página (texto negro sobre fondo blanco) como a otros
+                elementos: botones, formulario, etc.</li><br>
+
+                <li>Texto alternativo y title en imágenes: el texto "alt" ofrece un texto alternativo que aparecerá en la
+                web en
+                caso de que la imagen, por cualquier razón, no pueda ser cargada; el title, por otro lado, hará que si
+                mantenemos
+                el puntero encima de una imagen se muestre el texto descriptivo que hayamos introducido.</li><br>
+
+                <li>Texto y fuentes: se ha usado como fuente verdana, de tipo SANS SERIF. Estas fuentes no tienen florituras
+                y
+                son
+                más claras y gruesas, lo que hace que sean más legibles para personas con dificultades de visión.</li><br>
+
+                <li>El texto se deja sin justificar en toda la página: la razón es que el texto justificado hace grandes
+                bloques de texto más difíciles de leer para gente con ciertos problemas, como por ejemplo la dislexia.
+
+                También se ha usado un número de letra grande para que sea clara y legible, y sin cursivas ni nada que
+                pueda entorpecer la lectura.</li><br>
+
+                <li>Navegación por teclado: la mayoría de elementos HTML como "input", "select", etc. son navegables
+                mediante el teclado sin necesidad de añadir nada. Otros elementos no, como por ejemplo los "div" o "span", aunque
+                en nuestro caso los hemos hecho accesibles tambén mediante teclado por si el usuario de sólo teclado
+                quisiera descargarse las fotos o el texto, por ejemplo.</li><br>
+
+                <li>Estructura HTML adecuada: se estructura el HTML correctamente, por ejemplo, colocando los headers consecutivamente.</li><br>
+            </ol>
+            </p>
+        </div>
+        <div class="imagen-accesibilidad">
+            <img src="pics/revision.png" tabindex="0" alt="Revisión accesibilidad"
+                title="Revisión de los elementos de accesibilidad de la web">
+        </div>
+
+
+    </div>
+
+    <br><br><br>
+
+    <footer>
+        <a class="linkz2" href="accesibilidad.html">Accesibilidad</a>
+        <p id="textito" tabindex="0">Contacta con nosotros: </p>
+        <div class="album">
+
+            <a class="fotoAlbum2" href="https://daily.dev/blog/10-web-accessibility-guidelines-for-developers"><img
+                    src="pics/twitter.png" alt="Link a twitter" title="Link a nuestro twitter sobre curling" /></a>
+
+
+            <a class="fotoAlbum2"
+                href="https://www.frontendmentor.io/articles/10-fundamental-web-accessibility-tips-for-frontend-developers-rUurADGxCt"><img
+                    src="pics/insta.png" alt="Link a instagram" title="Link a nuestro instagram sobre curling" /></a>
+
+
+            <a class="fotoAlbum2"
+                href="https://www.section508.gov/content/guide-accessible-web-design-development/"><img
+                    src="pics/fb.png" alt="Link a facebook" title="Link a nuestro facebook sobre curling" /></a>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
